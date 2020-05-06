@@ -1,0 +1,28 @@
+# Gems that are not necessary, but might be useful or a personal preference.
+# They won't go into the git repo, so fill yer boots! Rename to Gemfile.local.
+
+group :development do
+  # rails specific
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'rails_best_practices'
+  gem 'rubocop-rails', require: false
+
+  # generally useful
+  gem 'rubycritic'
+  gem 'simplecov'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'fasterer'
+  gem 'bullet'
+
+  # I generally already have these gem installed
+  # gem 'rubocop'
+  # gem 'rubocop-rspec', require: false
+  # gem 'rubocop-rspec-performance', require: false
+  # gem 'rubocop-require_tools', require: false
+  # gem 'rubocop-rake', require: false
+  # gem 'rubocop-i18n', require: false
+end

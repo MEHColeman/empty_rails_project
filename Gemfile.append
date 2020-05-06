@@ -1,0 +1,24 @@
+group :test do
+  gem 'rake'
+  gem 'rspec'
+  gem 'rspec-rails'
+  # gem 'factory_bot_rails'
+  # gem 'spring-commands-rspec'
+  # gem 'database_cleaner-active_record'
+end
+
+group :development, :test do
+  # gem 'parallel_tests'
+end
+
+group :development do
+  gem 'brakeman'
+  gem 'bundle-audit'
+end
+
+# gem 'feature'
+# gem 'devise'
+
+# include local gemfile
+local_gemfile = File.join(File.dirname(__FILE__), 'Gemfile.local')
+instance_eval(File.read(local_gemfile)) if File.readable?(local_gemfile)
