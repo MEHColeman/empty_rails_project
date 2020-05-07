@@ -63,7 +63,7 @@ EOF
 rubocop --auto-correct . || true
 
 # Replace this project's git with a new, clean repo
-# rm -rf ./.git
-# git init
-# git add .
-# git commit -am 'Initial commit'
+rm -rf ./.git
+git init
+git add .
+git commit -m 'Initial commit'
