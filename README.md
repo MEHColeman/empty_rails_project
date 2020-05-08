@@ -24,10 +24,12 @@ checks. They are not Rakefile tasks because they generally don't need the rails
 environment to run, and in some cases that would be a bad thing.
 
 Makefile contains:
+~~~
 make secure    # run bundle audit and brakeman to check for known vulnerabilities
 make quality   # run rubycritic, simplecov and rails_best_practices
 make fast      # run fasterer
 make all       # all of the above
+~~~
 
 ### Why didn't you use the rails template functionality?
 Because this project compliments two other versions created for plain ruby
